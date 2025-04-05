@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Enthusiast | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo">λ</div>
+            <ul>
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="literature.html">Literature</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>
+                <span class="greeting">Hello, I'm</span>
+                <span class="name">Alex Taylor</span>
+            </h1>
+            <h2>Mathematician & Educator</h2>
+            <p class="tagline">Exploring the beauty of mathematics through visualization</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I'm a mathematician with a passion for making complex concepts intuitive through dynamic visualizations. With a background in applied mathematics and computer science, I bridge the gap between abstract mathematical ideas and their practical applications.</p>
+                        <p>My research focuses on dynamical systems, differential geometry, and their applications in machine learning. I believe that mathematical literacy is crucial in our data-driven world, and I'm dedicated to creating educational content that makes these concepts accessible.</p>
+                        <div class="interests">
+                            <h3>Research Interests</h3>
+                            <ul>
+                                <li>Differential Geometry</li>
+                                <li>Dynamical Systems</li>
+                                <li>Mathematical Visualization</li>
+                                <li>Machine Learning Theory</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="visualization-container">
+                        <div id="math-animation"></div>
+                        <div class="animation-caption">
+                            <p>Interactive visualization of a complex dynamical system</p>
+                            <p class="interaction-hint">Drag to rotate • Scroll to zoom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2>Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">∫</div>
+                        <h3>Mathematical Analysis</h3>
+                        <p>Specializing in differential equations, dynamical systems, and complex analysis with applications to real-world problems.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Programming</h3>
+                        <p>Proficient in Python, JavaScript, and MATLAB for scientific computing, data analysis, and creating interactive visualizations.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Visualization</h3>
+                        <p>Creating intuitive and elegant visualizations of mathematical concepts using modern web technologies and graphics libraries.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📊</div>
+                        <h3>Data Science</h3>
+                        <p>Applying mathematical models to extract insights from complex datasets and solve challenging problems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="oracle-section">
+            <div class="container">
+                <h2>Ask The Oracle About Me</h2>
+                <div class="oracle-container">
+                    <div class="oracle-header">
+                        <div class="oracle-icon">🔮</div>
+                        <h3>Mathematical Oracle</h3>
+                    </div>
+                    <div class="oracle-body">
+                        <div class="oracle-messages" id="oracle-messages">
+                            <div class="oracle-message system">
+                                <p>Ask the Oracle anything about Alex, mathematics, or the universe...</p>
+                            </div>
+                        </div>
+                        <div class="api-key-container" id="api-key-container">
+                            <p>Enter your Gemini API key to activate the Oracle:</p>
+                            <div class="api-key-input-container">
+                                <input type="password" id="gemini-api-key" placeholder="Paste your Gemini API key here">
+                                <button id="save-api-key" class="oracle-button">Save Key</button>
+                            </div>
+                            <p class="api-key-note">Your API key is stored locally in your browser and never sent to our servers.</p>
+                        </div>
+                        <form id="oracle-form" class="oracle-input">
+                            <input type="text" id="oracle-question" placeholder="What would you like to know?" disabled>
+                            <button type="submit" id="ask-oracle" class="oracle-button" disabled>Ask</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Eigenvalue Visualization Tool</h3>
+                        <p>An interactive web application that visualizes eigenvalues and eigenvectors of matrices, helping students gain intuition about linear transformations.</p>
+                        <div class="project-tags">
+                            <span>Linear Algebra</span>
+                            <span>Education</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Differential Equations Playground</h3>
+                        <p>An interactive environment for exploring solutions to various differential equations, with visual representations of vector fields and solution curves.</p>
+                        <div class="project-tags">
+                            <span>Differential Equations</span>
+                            <span>Visualization</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Topology Explorer</h3>
+                        <p>A 3D interactive tool for exploring fundamental concepts in topology, including manifolds, homeomorphisms, and covering spaces.</p>
+                        <div class="project-tags">
+                            <span>Topology</span>
+                            <span>3D Graphics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">λ</div>
+                <div class="footer-links">
+                    <a href="https://github.com/">GitHub</a>
+                    <a href="https://twitter.com/">Twitter</a>
+                    <a href="https://linkedin.com/">LinkedIn</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Alex Taylor. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>
